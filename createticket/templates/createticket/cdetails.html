@@ -1,0 +1,14 @@
+{% extends 'createticket/layout.html' %}
+
+{% block content %}
+<h4>{{ticket.subject}}</h4>
+    <div class="card">
+        <div class="card-content">
+            {{ticket.description}}
+        </div>
+        <div class="card-action">
+            {{ticket.createdat}}
+        </div>
+    </div>
+    <a href="/createticket" class="btn">Go Back</a>
+{% endblock %}

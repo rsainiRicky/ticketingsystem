@@ -1,0 +1,11 @@
+{% extends 'createticket/layout.html' %}
+
+{% block content %}
+<h4>{{title}}</h4>
+<ul class="collection">
+{% for ticket in tickets %}
+<li class="collection-item"><a href="/createticket/details/{{ticket.ticketId}}">{{ticket.subject}}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}
